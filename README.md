@@ -15,6 +15,7 @@ https://github.com/Ryan-Biondo/The-Code-Quiz-Server
 
 - React.js
 - TypeScript
+- CSS
 - react-router-dom
 
 ## **Features**

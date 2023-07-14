@@ -1,0 +1,10 @@
+.circle-bg {
+    stroke-linecap: round;
+}
+
+.circle {
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}

@@ -1,0 +1,265 @@
+:root {
+  --primary-color: #104e8b;
+  --primary-color-dark: #092a4b;
+  --primary-text-color: #272525;
+  --secondary-text-color: #fcfcfc;
+  --secondary-color: #2a3439;
+  --tertiary-color: #2a3439;
+  --quaternary-color: #a2a2d0;
+}
+
+body,
+html {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0;
+  margin: 0;
+  animation: load 1s ease-in-out;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-top-right-radius: 5px;
+  align-self: start;
+  font-size: 1.3em;
+}
+footer a {
+  color: var(--secondary-text-color);
+}
+.homeFlexWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.techQuizWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+
+  padding: 0;
+}
+h2 {
+  font-size: 1.2em;
+  margin: 20px 50px;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 10px 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  width: 100vw;
+  padding: 30px 0;
+}
+.header h1 {
+  margin: 10px 20px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
+  font-family: inherit;
+  color: var(--primary-text-color);
+  transition: opacity 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+}
+.submitButton {
+  font-size: 1em;
+  margin: 20px 10px;
+}
+
+form {
+  width: 300px;
+  margin: 50px auto;
+
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  margin: 0 5px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+select {
+  margin: 10px 10px 40px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.quizTip {
+  margin: 30px auto;
+  width: 300px;
+
+  font-size: 1em;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+.choice {
+  display: flex;
+  margin: 10px auto;
+  width: 40%;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--primary-color-dark);
+}
+.choice:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--primary-color);
+}
+
+.controlButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nextButton {
+  font-size: 1em;
+}
+.mainMenu {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.answerExplanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  margin: 10px 30px;
+  font-size: 1em;
+  color: var(--secondary-text-color);
+}
+
+.answerCorrect {
+  font-weight: bold;
+}
+
+.scoreScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  font-size: 1.5em;
+  height: 400px;
+  /* color: var(--secondary-text-color); */
+}
+.nextQuiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nextQuiz button {
+  font-size: 0.8em;
+}
+
+.yourScore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  height: 100px;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 810px) {
+  .choice {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .techQuizWrap {
+    justify-content: space-between;
+  }
+  .header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .question {
+    font-size: 1em;
+    margin: 10px 10px 20px;
+  }
+
+  .mainMenu,
+  .nextButton {
+    margin: 5px;
+    font-size: 0.8em;
+  }
+  .answerExplanation {
+    height: 190px;
+    margin-bottom: 50px;
+  }
+  .scoreScreen {
+    height: 400px;
+  }
+  .yourScore {
+    height: 150px;
+  }
+  form,
+  .quizTip {
+    width: 70vw;
+  }
+  .nextQuiz button {
+    font-size: 0.6em;
+  }
+  .choice {
+    width: 95vw;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+}

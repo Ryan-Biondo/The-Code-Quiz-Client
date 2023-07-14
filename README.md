@@ -3,7 +3,7 @@
 ## **Overview**
 
 This project is a web client that connects to the Code Quiz server to provide a random list of quiztions from a pool of quizzes. This project is built with React and TypeScript.
-You can view the live version of my portfolio [here](https://www.thecodequiz.com).
+You can view the live version of the application [here](https://www.thecodequiz.com).
 
 The server can be found here:
 https://github.com/Ryan-Biondo/The-Code-Quiz-Server

@@ -6,7 +6,7 @@ This project is a web client that connects to the Code Quiz server to provide a 
 
 ## **Demo**
 
-_Link to your live demo or attach screenshots here_
+<img src="demo.gif" width="800" alt ="demo"/>
 
 ## **Technologies Used**
 

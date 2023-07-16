@@ -26,6 +26,8 @@ const Home: React.FC = () => {
           <label>
             Category:
             <select
+              name="category"
+              id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value)}>
               <option value="javascript">JavaScript</option>
@@ -35,6 +37,8 @@ const Home: React.FC = () => {
           <label>
             Difficulty:
             <select
+              name="difficulty"
+              id="difficulty"
               value={difficulty}
               onChange={(e) => setDifficulty(e.target.value)}>
               <option value="easy">Easy</option>

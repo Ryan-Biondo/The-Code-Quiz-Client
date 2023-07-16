@@ -184,13 +184,11 @@ const TechQuiz: React.FC = () => {
       <div>
         {selectedAnswer && (
           <div className="answerExplanation">
-            <div className="answerStatement">Your answer: {selectedAnswer}</div>
+            {/* <div className="answerStatement">Your answer: {selectedAnswer}</div> */}
             <div className="answerCorrect">
               {isCorrect ? 'Correct!' : 'Wrong answer.'}
             </div>
-            <div className="answerExplain">
-              Explanation: {questionData.explanation}
-            </div>
+            <div className="answerExplain">{questionData.explanation}</div>
           </div>
         )}
       </div>

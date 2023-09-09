@@ -98,7 +98,7 @@ const TechQuiz: React.FC = () => {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://guarded-retreat-53579-e3fa6630b287.herokuapp.com/api/${category}/${difficulty}`
+      `https://the-code-quiz-server.vercel.app/api/${category}/${difficulty}`
     )
       .then((response) => {
         if (!response.ok) {

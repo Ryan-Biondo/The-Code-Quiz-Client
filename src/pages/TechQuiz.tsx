@@ -98,7 +98,14 @@ const TechQuiz: React.FC = () => {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://the-code-quiz-server.vercel.app/api/${category}/${difficulty}`
+      `https://the-code-quiz-server.vercel.app/api/${category}/${difficulty}`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      }
     )
       .then((response) => {
         if (!response.ok) {
